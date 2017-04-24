@@ -1,0 +1,352 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.homemade.tianp.crossborder.Menu_Home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#134343"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="CrossBorder"
+                android:textColor="@android:color/background_light"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:background="@android:color/transparent"
+                android:id="@+id/Button_New"
+                android:text="New"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:background="@android:color/transparent"
+                android:id="@+id/Button_Open"
+                android:text="Open"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:background="@android:color/transparent"
+                android:id="@+id/Button_Share"
+                android:text="Share"
+                android:textColor="@android:color/background_light" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/SelectionView_New"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create new entry form:"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.33"
+                android:background="@android:color/holo_orange_light"
+                android:textColor="@android:color/background_light"
+                android:text="\n+\n\nForm1A\n\nEntry\n\n"
+                android:id="@+id/Button_NewForm1A"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.33"
+                android:background="@android:color/holo_green_dark"
+                android:textColor="@android:color/background_light"
+                android:text="\n+\n\nForm1B\n\nEntry\n\n"
+                android:id="@+id/Button_NewForm1B" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.33"
+                android:background="@android:color/holo_blue_dark"
+                android:textColor="@android:color/background_light"
+                android:text="\n+\n\nForm1C\n\nEntry\n\n"
+                android:id="@+id/Button_NewForm1C"/>
+        </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Recent forms to be completed"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No entries found"
+            android:id="@+id/TextView_EmptyMessage"
+            android:gravity="center"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/scrollViewComplete"
+                android:fillViewport="true">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ListView_IncompleteForms_Home">
+                    </ListView>
+                </LinearLayout>
+            </ScrollView>
+    </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/SelectionView_Open"
+        android:orientation="vertical">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Complete Entries:"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.33"
+                        android:background="@android:color/holo_orange_light"
+                        android:textColor="@android:color/background_light"
+                        android:text="\nForm1A\n\nEntries\n"
+                        android:id="@+id/Button_CompleteForm1AEntries"/>
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.33"
+                        android:background="@android:color/holo_green_dark"
+                        android:textColor="@android:color/background_light"
+                        android:text="\nForm1B\n\nEntries\n"
+                        android:id="@+id/Button_CompleteForm1BEntries" />
+
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.33"
+                        android:background="@android:color/holo_blue_dark"
+                        android:textColor="@android:color/background_light"
+                        android:text="\nForm1C\n\nEntries\n"
+                        android:id="@+id/Button_CompleteForm1CEntries"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Incomplete Entries:"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.33"
+                        android:background="@android:color/holo_orange_dark"
+                        android:textColor="@android:color/background_light"
+                        android:text="\nForm1A\n\nEntries\n"
+                        android:id="@+id/Button_IncompleteForm1AEntries"/>
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.33"
+                        android:background="@android:color/holo_green_light"
+                        android:textColor="@android:color/background_light"
+                        android:text="\nForm1B\n\nEntries\n"
+                        android:id="@+id/Button_IncompleteForm1BEntries"/>
+
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.33"
+                        android:background="@android:color/holo_blue_light"
+                        android:textColor="@android:color/background_light"
+                        android:text="\nForm1C\n\nEntries\n"
+                        android:id="@+id/Button_IncompleteForm1CEntries" />
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Complete Forms:"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.33"
+                        android:background="@android:color/holo_orange_light"
+                        android:textColor="@android:color/background_light"
+                        android:text="\nForm1A\n"
+                        android:id="@+id/Button_IncompleteForm1A" />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.33"
+                        android:background="@android:color/holo_green_dark"
+                        android:textColor="@android:color/background_light"
+                        android:text="\nForm1B\n"
+                        android:id="@+id/Button_IncompleteForm1B" />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.33"
+                        android:background="@android:color/holo_blue_dark"
+                        android:textColor="@android:color/background_light"
+                        android:text="\nForm1C\n"
+                        android:id="@+id/Button_IncompleteForm1C" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

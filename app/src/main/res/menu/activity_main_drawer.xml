@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Menu_Home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+
+        <!--New Form Entry-->
+        <item android:title="Create New Entry">
+            <menu>
+                <item
+                    android:id="@+id/Menu_NewFormEntry"
+                    android:icon="@drawable/ic_keyboard_arrow_down"
+                    android:title="Forms" />
+
+                <item android:title="New Form 1A Entry"
+                    android:id="@+id/Menu_New1A"
+                    android:visible="false"
+                    android:icon="@drawable/ic_crop_5_4_black_24dp_empty"/>
+                <item android:title="New Form 1B Entry"
+                    android:id="@+id/Menu_New1B"
+                    android:visible="false"
+                    android:icon="@drawable/ic_crop_5_4_black_24dp_empty"/>
+                <item android:title="New Form 1C Entry"
+                    android:id="@+id/Menu_New1C"
+                    android:visible="false"
+                    android:icon="@drawable/ic_crop_5_4_black_24dp_empty"/>
+
+            </menu>
+        </item>
+
+        <!--Manage form 1A-->
+        <item android:title="Entries">
+            <menu>
+                <item
+                    android:id="@+id/Menu_Manage1A"
+                    android:title="Form 1A"
+                    android:icon="@drawable/ic_keyboard_arrow_down"/>
+
+                <item
+                    android:id="@+id/Menu_Complete1A"
+                    android:title="Completed Entries"
+                    android:visible="false"
+                    android:icon="@drawable/ic_crop_5_4_black_24dp_full"/>
+                <item android:title="Incompleted Entries"
+                    android:id="@+id/Menu_Incomplete1A"
+                    android:visible="false"
+                    android:icon="@drawable/ic_crop_5_4_black_24dp_half"/>
+
+                <!--Manage form 1B-->
+                <item
+                    android:id="@+id/Menu_Manage1B"
+                    android:title="Form 1B"
+                    android:icon="@drawable/ic_keyboard_arrow_down"/>
+
+                <item
+                    android:id="@+id/Menu_Complete1B"
+                    android:title="Completed Entries"
+                    android:visible="false"
+                    android:icon="@drawable/ic_crop_5_4_black_24dp_full"/>
+                <item android:title="Incompleted Entries"
+                    android:id="@+id/Menu_Incomplete1B"
+                    android:visible="false"
+                    android:icon="@drawable/ic_crop_5_4_black_24dp_half" />
+
+                <!--Manage form 1C-->
+                <item
+                    android:id="@+id/Menu_Manage1C"
+                    android:title="Form 1C"
+                    android:icon="@drawable/ic_keyboard_arrow_down"/>
+
+                <item
+                    android:id="@+id/Menu_Complete1C"
+                    android:title="Completed Entries"
+                    android:visible="false"
+                    android:icon="@drawable/ic_crop_5_4_black_24dp_full"/>
+                <item android:title="Incompleted Entries"
+                    android:id="@+id/Menu_Incomplete1C"
+                    android:visible="false"
+                    android:icon="@drawable/ic_crop_5_4_black_24dp_half"/>
+
+            </menu>
+        </item>
+        <item android:title="Form Completion">
+            <menu>
+                <item android:title="Forms"
+                    android:id="@+id/Menu_ViewAll"
+                    android:icon="@drawable/ic_keyboard_arrow_down"/>
+                <item android:title="Form 1A"
+                    android:id="@+id/Menu_View1A"
+                    android:visible="false"
+                    android:icon="@drawable/ic_assignment_black_24dp"/>
+                <item android:title="Form 1B"
+                    android:id="@+id/Menu_View1B"
+                    android:visible="false"
+                    android:icon="@drawable/ic_assignment_black_24dp"/>
+                <item android:title="Form 1C"
+                    android:id="@+id/Menu_View1C"
+                    android:visible="false"
+                    android:icon="@drawable/ic_assignment_black_24dp"/>
+            </menu>
+
+        </item>
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/Menu_Share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/Menu_Sync"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Sync (Database)"
+                android:enabled="false"/>
+        </menu>
+    </item>
+
+</menu>
